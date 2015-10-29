@@ -1,3 +1,117 @@
 body{
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: #f5f6f7;
+    color: #999;
 }
+.grey_color{
+    color: #a6a6a6;
+}
+.dark_color{
+    color: #666;
+}
+.inner_header{
+    padding-top: 25px;
+}
+.line_h_header{
+    line-height: 34px;
+}
+.btn-default{
+    color: #666;
+    border: none;
+}
+.button_div{
+    text-align: right;
+    padding-right: 45px;
+}
+.card_but_popover{
+    border-radius: 3px;
+    -webkit-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    -ms-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    -o-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+}
+/*================================= menu =======================================*/
+.menu{
+    padding-left: 0;
+}
+.menu_ul{
+    padding-left: 0;
+}
+.menu_ul li{
+    list-style: none;
+    padding: 10px 0;
+    position: relative;
+}
+.menu_ul li:before{
+    content: "";
+    height: 1px;
+    width: 215px;
+    background-color: #dcdcdd;
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -35px;
+}
+.menu_ul li:last-child:after{
+    content: "";
+    height: 1px;
+    width: 215px;
+    background-color: #dcdcdd;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: -35px;
+}
+/*=============================== catalog ==============================*/
+.img_catalog{
+    width: 100%;
+    position: relative;
+}
+.padding_img{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.info{
+    background-color: #fff;
+    padding-bottom: 5px;
+}
+.info span{
+    padding: 5px 7px;
+}
+.price{
+    position: absolute;
+    bottom: 80px;
+    left: 24px;
+    color: #fff;
+    font-size: 20px;
+}
+/*=================================== footer =======================*/
+nav{
+    padding-left: 25px;
+    margin-top: 30px;
+}
+.pagination > li >a{
+    color: #666;
+    border: none;
+    padding: 12px 20px;
+    background-color: #F5F6F7;
+    float: none;
+}
+.pagination > li >a:hover{
+    border: 1px solid #dcdcdd;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #333;
+}
+.info_footer{
+    padding: 30px 0;
+}
+.studia{
+    text-align: right;
+    padding-right: 45px;
+}
+.pravo{
+    padding-left: 40px;
+ }

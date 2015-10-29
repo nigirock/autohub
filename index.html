@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" href="style/svg_style.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/app.js"></script>
@@ -15,7 +16,12 @@
 </head>
 
 <body ng-controller="mainCtrl">
-<header ng-header></header>
+    <div class="container-fluid">
+        <header ng-header class="row"></header>
+        <menu ng-left-menu class="col-md-2"></menu>
+        <section ng-catalog class="col-md-10"></section>
+        <footer ng-footer></footer>
+    </div>
 </body>
 
 </html>
