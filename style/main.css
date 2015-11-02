@@ -41,13 +41,19 @@ body{
 }
 .menu_ul li{
     list-style: none;
-    padding: 10px 0;
+    padding: 10px 0 10px 30px;
     position: relative;
+    cursor: pointer;
+    margin-left: -30px;
+}
+.menu_ul li:hover{
+    background-color: #e8e9ea;
+    color: #333;
 }
 .menu_ul li:before{
     content: "";
     height: 1px;
-    width: 215px;
+    width: 235px;
     background-color: #dcdcdd;
     display: block;
     position: absolute;
@@ -86,6 +92,57 @@ body{
     left: 24px;
     color: #fff;
     font-size: 20px;
+}
+/*==================== popover ===========================*/
+.pop{
+    background-color: #F5F6F7;
+    position: absolute;
+    border-radius: 3px;
+    -webkit-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    -ms-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    -o-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    padding: 20px;
+    left: 204px;
+    top: 110px;
+}
+.pop_price{
+    top: 70px;
+}
+.pop:after{
+    content: "";
+    border-width: 10px;
+    top: 18px;
+    left: -10px;
+    border-right-color: #F5F6F7;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-width: 0;
+    position: absolute;
+    border-style: solid;
+}
+.pop ul{
+    display: inline-block;
+}
+.pop ul li{
+    list-style: none;
+    padding: 10px;
+}
+.pop ul li:hover{
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    -webkit-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    -ms-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    -o-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.pop ul li a{
+    color: #999;
+    text-decoration: none;
 }
 /*=================================== footer =======================*/
 nav{

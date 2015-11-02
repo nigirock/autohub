@@ -99,5 +99,130 @@
       "price":"6 000",
       "photo":"img/img_9.png"
     }
+  ],
+  "modelsCars":[
+    {
+      "Acura":[
+
+      ],
+      "AlfaRomeo":[
+
+      ],
+      "Audi":[
+
+      ],
+      "BMW":[
+        "320","550"
+      ],
+      "Chevrolet":[
+
+      ],
+      "Chrysler":[
+
+      ],
+      "Citroen":[
+
+      ],
+      "Dacia":[
+
+      ],
+      "Daewoo":[
+
+      ],
+      "Dodge":[
+
+      ],
+      "Fiat":[
+
+      ],
+      "Ford":[
+
+      ],
+      "Great Wall":[
+
+      ],
+      "Honda":[
+
+      ],
+      "Hyundai":[
+
+      ],
+      "IVECO":[
+
+      ],
+      "Infinity":[
+
+      ],
+      "Jeep":[
+
+      ],
+      "Kia":[
+
+      ],
+      "Lancia":[
+
+      ],
+      "Land Rover":[
+
+      ],
+      "Lexus":[
+
+      ],
+      "MINI":[
+
+      ],
+      "Mazda":[
+
+      ],
+      "Mercedes-Benz":[
+        "S300","S500","S600"
+      ],
+      "Mitsubishi":[
+
+      ],
+      "Nissan":[
+
+      ],
+      "Opel":[
+
+      ],
+      "Peugeot":[
+
+      ],
+      "Pontiac":[
+
+      ],
+      "Renault":[
+
+      ],
+      "Rover":[
+
+      ],
+      "SEAT":[
+
+      ],
+      "Saab":[
+
+      ],
+      "Skoda":[
+
+      ],
+      "Subaru":[
+
+      ],
+      "Suzuki":[
+
+      ],
+      "Toyota":[
+
+      ],
+      "Volkswagen":[
+
+      ],
+      "Volvo":[
+
+      ]
+    }
   ]
+
 }

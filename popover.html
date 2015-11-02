@@ -1,0 +1,32 @@
+<div class="pop pop_price" ng-show="visiblePopupPrice" ng-mouseenter=addPopup($index) ng-mouseleave=addPopupLeave($index)>
+ <ul>
+     <li>100</li>
+     <li>200</li>
+     <li>300</li>
+     <li>400</li>
+     <li>500</li>
+ </ul>
+</div>
+        <!-- ========================================= -->
+<div class="pop" ng-show="visiblePopupMark" ng-mouseenter=addPopup($index) ng-mouseleave=addPopupLeave($index)>
+    <ul>
+        <li ng-repeat="item in carsModels.slice(0,10)">
+            <a href="#" ng-click=addCarSearch(item)>{{item}}</a>
+        </li>
+    </ul>
+    <ul>
+        <li ng-repeat="item in carsModels.slice(10,20)">
+            <a href="#" ng-click=addCarSearch(item)>{{item}}</a>
+        </li>
+    </ul>
+    <ul>
+        <li ng-repeat="item in carsModels.slice(20,30)">
+            <a href="#" ng-click=addCarSearch(item)>{{item}}</a>
+        </li>
+    </ul>
+    <ul>
+        <li ng-repeat="item in carsModels.slice(30)">
+            <a href="#" ng-click=addCarSearch(item)>{{item}}</a>
+        </li>
+    </ul>
+</div>
