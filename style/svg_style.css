@@ -31,12 +31,16 @@
 
 .icon-add:before {
 	content: "\e900";
+	font-size: 25px;
+	color: #666;
 }
 .icon-clear:before {
 	content: "\e901";
 }
 .icon-filter:before {
 	content: "\e902";
+	font-size: 25px;
+	color: #666;
 }
 .icon-logo:before {
 	content: "\e903";

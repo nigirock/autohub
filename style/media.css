@@ -1,0 +1,58 @@
+@media (max-width: 992px) {
+    .media_block{
+        display: block;
+    }
+    .center_block_header{
+        text-align: center;
+    }
+    .card_but_popover{
+        font-size: 12px;
+    }
+    .icon-logo:before{
+        font-size: 20px;
+    }
+    .menu{
+        display: none;
+    }
+
+}
+@media (max-width: 769px) {
+    .inner_header .icon-logo:before {
+        content: "\e904";
+        font-size: 20px;
+        color: #666;
+        line-height: 1.5;
+        padding-left: 15px;
+    }
+    .media_block{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .media_block_invis{
+        display: block;
+    }
+    .price{
+        font-size: 35px;
+    }
+    .card_but_popover{
+        font-size: 14px;
+    }
+    .car_name_model{
+        font-size: 16px;
+    }
+    .info_footer{
+        text-align: center;
+    }
+    .studia{
+        text-align: center;
+        padding-right: 0;
+    }
+    .pravo{
+        padding-left: 0;
+    }
+    nav{
+        text-align: center;
+    }
+}

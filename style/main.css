@@ -1,8 +1,12 @@
+
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     background-color: #f5f6f7;
     color: #999;
+}
+.media_block_invis{
+    display: none;
 }
 .grey_color{
     color: #a6a6a6;
@@ -31,6 +35,16 @@ body{
     -ms-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
     -o-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
     box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+}
+.btn_mobile button{
+    background-color: transparent;
+    border: none;
+}
+.btn_filter span{
+    float: right;
+}
+.btn_add span{
+    float: right;
 }
 /*================================= menu =======================================*/
 .menu{
@@ -88,14 +102,17 @@ body{
     padding-bottom: 5px;
 }
 .info span{
-    padding: 5px 7px;
+    padding: 2%;
+}
+.car_name_model{
+    padding: 2%;
 }
 .price{
     position: absolute;
     bottom: 80px;
     left: 24px;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
 }
 /*==================== popover ===========================*/
 .pop{

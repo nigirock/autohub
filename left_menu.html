@@ -1,16 +1,7 @@
-<div class="menu col-md-12">
+<div class="menu col-md-12 col-sm-12 media_block">
     <ul class="menu_ul">
-<!--        <li>{{defaultLeftMenu[0]}}</li>
-        <li ng-mouseenter=addPopup() ng-mouseleave=addPopupLeave()>{{defaultLeftMenu[1]}}</li>
-        <li>{{defaultLeftMenu[2]}}</li>
-        <li>{{defaultLeftMenu[3]}}</li>
-        <li>{{defaultLeftMenu[4]}}</li>
-        <li>{{defaultLeftMenu[5]}}</li>
-        <li>{{defaultLeftMenu[6]}}</li>
-        <li>{{defaultLeftMenu[7]}}</li>-->
-
-
-        <li ng-repeat="item in defaultLeftMenu" ng-mouseenter=addPopup($index) ng-mouseleave=addPopupLeave($index)>{{item}}</li>
-
+        <li ng-repeat="item in defaultLeftMenu" ng-mouseenter=addPopup($index) ng-mouseleave=addPopupLeave($index)>
+            {{item}}
+        </li>
     </ul>
 </div>

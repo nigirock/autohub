@@ -12,6 +12,9 @@ app.directive("ngLeftMenu",function(){
             scope.visiblePopupMark = false;
             scope.visiblePopupPrice = false;
             scope.defaultLeftMenu =["Цена до 100 000$","Любая марка","Любая модель","Не старше 2008 года","Любой тип топлива","Объем не менее 1.0","Любая коробка передач","пробег до 200 000 км"];
+            scope.currency = scope.defaultLeftMenu.length;
+            console.log(scope.currency);
+
             scope.addPopup = function(index){
                 switch (index){
                     case(index = 0):
@@ -21,8 +24,8 @@ app.directive("ngLeftMenu",function(){
                         scope.visiblePopupMark = true;
                         break;
                 }
-                console.log(scope.visiblePopupPrice);
             };
+
             scope.addPopupLeave = function(index){
                 switch (index){
                     case(index = 0):
@@ -32,9 +35,11 @@ app.directive("ngLeftMenu",function(){
                         scope.visiblePopupMark = false;
                         break;
                 }
-                console.log(scope.visiblePopupPrice);
             };
-
+            /*debugger;*/
+            scope.addCarMoney = function(money){
+                scope.defaultLeftMenu[0] = "Цена до " + money + "$";
+            };
             scope.addCarSearch = function(nameCar){
                 scope.defaultLeftMenu[1] = nameCar;
             };
@@ -64,7 +69,7 @@ app.directive("ngFooter",function(){
 app.directive("ngPopover",function(){
     return{
         link: function(scope,element,attributes){
-
+            scope.arrMoney = [1000,3000,5000,10000,50000]
         },
         restrict: "A",
         templateUrl: "popover.html"
