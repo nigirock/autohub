@@ -1,6 +1,11 @@
 app.directive("ngHeader",function(){
     return{
         link: function(scope,element,attributes){
+            scope.toggleBool = false;
+            scope.toggleMenu = function(){
+              scope.toggleBool = scope.toggleBool == false ? true : false;
+                console.log(scope.toggleBool);
+            };
         },
         restrict: "A",
         templateUrl: "header.html"
@@ -13,8 +18,11 @@ app.directive("ngLeftMenu",function(){
             scope.visiblePopupPrice = false;
             scope.defaultLeftMenu =["Цена до 100 000$","Любая марка","Любая модель","Не старше 2008 года","Любой тип топлива","Объем не менее 1.0","Любая коробка передач","пробег до 200 000 км"];
             scope.currency = scope.defaultLeftMenu.length;
-            console.log(scope.currency);
 
+            scope.toggleMenu = function(){
+                scope.toggleBool = scope.toggleBool == false ? true : false;
+                console.log(scope.toggleBool);
+            };
             scope.addPopup = function(index){
                 switch (index){
                     case(index = 0):

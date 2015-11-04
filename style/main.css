@@ -6,13 +6,19 @@ body{
     color: #999;
 }
 .media_block_invis{
-    display: none;
+    display: block;
 }
-.grey_color{
-    color: #a6a6a6;
+.hover_color{
+    color: #333;
 }
 .dark_color{
     color: #666;
+}
+.btn_add{
+    display: none;
+}
+.btn_filter:focus{
+    outline: none;
 }
 .inner_header{
     padding-top: 25px;
@@ -24,17 +30,20 @@ body{
     color: #666;
     border: none;
 }
+.btn_filter{
+    display: none;
+}
 .button_div{
     text-align: right;
     padding-right: 45px;
 }
 .card_but_popover{
     border-radius: 3px;
-    -webkit-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
-    -ms-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
-    -o-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
-    box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    -ms-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    -o-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
 }
 .btn_mobile button{
     background-color: transparent;
@@ -63,6 +72,7 @@ body{
 .menu_ul li:hover{
     background-color: #e8e9ea;
     color: #333;
+    cursor: pointer;
 }
 .menu_ul li:before{
     content: "";
@@ -88,6 +98,7 @@ body{
 .img_catalog{
     width: 100%;
     position: relative;
+    cursor: pointer;
 }
 .img_catalog:hover{
     width: 100%;
@@ -119,17 +130,20 @@ body{
     background-color: #F5F6F7;
     position: absolute;
     border-radius: 3px;
-    -webkit-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
-    -ms-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
-    -o-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
-    box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    -ms-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    -o-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
     padding: 20px;
-    left: 204px;
-    top: 110px;
+    left: 185px;
+    z-index: 100;
 }
 .pop_price{
-    top: 70px;
+    top: 5px;
+}
+.pop_marks{
+    top: 45px;
 }
 .pop:after{
     content: "";
@@ -153,22 +167,25 @@ body{
 .pop ul li:hover{
     border: 1px solid #e5e5e5;
     border-radius: 3px;
-    -webkit-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
-    -ms-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
-    -o-box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
-    box-shadow:0 1px 5px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    -ms-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    -o-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
     cursor: pointer;
+    color: #333;
 }
-
 .pop ul li a{
-    color: #999;
     text-decoration: none;
+    color: #959595;
+    padding: 3px;
+}
+.pop ul li a:hover{
+    color: #333;
 }
 /*=================================== footer =======================*/
 nav{
-    padding-left: 25px;
-    margin-top: 30px;
+    padding-left: 10px;
 }
 .pagination > li >a{
     color: #666;
@@ -185,6 +202,12 @@ nav{
 }
 .info_footer{
     padding: 30px 0;
+}
+.info_footer a{
+    text-decoration: none;
+}
+.info_footer a:hover{
+    color: #333;
 }
 .studia{
     text-align: right;

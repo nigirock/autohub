@@ -1,20 +1,76 @@
+@media (min-width: 993px){
+    menu{
+        display: block;
+    }
+}
 @media (max-width: 992px) {
-    .media_block{
+    .btn_filter{
         display: block;
     }
     .center_block_header{
         text-align: center;
     }
+    .btn_filter{
+        padding-top: 20px;
+    }
+    .inner_header .icon-filter:before {
+        content: "\e902";
+        font-size: 35px;
+        color: #666;
+    }
+    menu{
+        display: none;
+        padding-left: 15px;
+    }
+    .menu_ul{
+        padding-left: 15px;
+    }
+    .menu_ul li{
+        list-style: none;
+        padding: 10px 10px;
+        position: relative;
+        cursor: pointer;
+        margin-left: 0;
+    }
+    .menu_ul li:before{
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #dcdcdd;
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 0;
+    }
+    .menu_ul li:last-child:after{
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #dcdcdd;
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+    .info{
+        font-size: 16px;
+    }
     .card_but_popover{
-        font-size: 12px;
+        font-size: 13px;
     }
     .icon-logo:before{
         font-size: 20px;
     }
-    .menu{
-        display: none;
+    .studia{
+        text-align: center;
+        padding: 15px 0;
     }
-
+    .copyright{
+        text-align: center;
+    }
+    .support{
+        text-align: center;
+    }
 }
 @media (max-width: 769px) {
     .inner_header .icon-logo:before {
@@ -27,20 +83,25 @@
     .media_block{
         display: none;
     }
-    .menu{
+    menu{
         display: none;
     }
     .media_block_invis{
         display: block;
     }
     .price{
-        font-size: 35px;
+        font-size: 40px;
+        bottom: 130px;
+        left: 30px;
+    }
+    .info{
+        font-size: 24px;
     }
     .card_but_popover{
         font-size: 14px;
     }
     .car_name_model{
-        font-size: 16px;
+        font-size: 30px;
     }
     .info_footer{
         text-align: center;
@@ -50,9 +111,35 @@
         padding-right: 0;
     }
     .pravo{
-        padding-left: 0;
+        padding: 10px 0;
     }
     nav{
         text-align: center;
+    }
+}
+@media (max-width: 501px){
+    .price{
+        font-size: 40px;
+        bottom: 110px;
+        left: 30px;
+    }
+    .info{
+        font-size: 20px;
+    }
+    .car_name_model{
+        font-size: 24px;
+    }
+}
+@media (max-width: 321px){
+    .price{
+        font-size: 30px;
+        bottom: 90px;
+        left: 25px;
+    }
+    .info{
+        font-size: 14px;
+    }
+    .car_name_model{
+        font-size: 18px;
     }
 }
