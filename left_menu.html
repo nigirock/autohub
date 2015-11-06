@@ -1,7 +1,8 @@
 <div class="menu col-md-12 col-sm-12">
     <ul class="menu_ul">
-        <li ng-repeat="item in defaultLeftMenu" ng-mouseenter=addPopup($index) ng-mouseleave=addPopupLeave($index)>
-            {{item}}
+        <li ng-repeat="item in menu" ng-mouseenter=addPopup($index) ng-mouseleave=addPopupLeave($index)>
+            {{item.Title}}
+            <span ng-class="{'fa icon-clear':item.selected}" ng-click=removeItem()></span>
         </li>
     </ul>
 </div>

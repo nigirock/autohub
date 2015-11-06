@@ -36,6 +36,11 @@
 }
 .icon-clear:before {
 	content: "\e901";
+	cursor: pointer;
+	font-size: 23px;
+	position: absolute;
+	top: 5px;
+	right: 15px;
 }
 .icon-filter:before {
 	content: "\e902";

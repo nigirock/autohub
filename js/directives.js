@@ -16,8 +16,6 @@ app.directive("ngLeftMenu",function(){
         link: function(scope,element,attributes){
             scope.visiblePopupMark = false;
             scope.visiblePopupPrice = false;
-            scope.defaultLeftMenu =["Цена до 100 000$","Любая марка","Любая модель","Не старше 2008 года","Любой тип топлива","Объем не менее 1.0","Любая коробка передач","пробег до 200 000 км"];
-            scope.currency = scope.defaultLeftMenu.length;
 
             scope.toggleMenu = function(){
                 scope.toggleBool = scope.toggleBool == false ? true : false;
@@ -46,10 +44,32 @@ app.directive("ngLeftMenu",function(){
             };
             /*debugger;*/
             scope.addCarMoney = function(money){
-                scope.defaultLeftMenu[0] = "Цена до " + money + "$";
+                scope.menu[0].Title = "Цена до " + money + "$";
+                for(var i=0;i<scope.menu.length;i++){
+                    scope.menu[i].selected = false;
+                }
+                scope.menu[0].selected = true;
             };
             scope.addCarSearch = function(nameCar){
-                scope.defaultLeftMenu[1] = nameCar;
+                scope.menu[1].Title = nameCar;
+                for(var i=0;i<scope.menu.length;i++){
+                    scope.menu[i].selected = false;
+                }
+                scope.menu[1].selected = true;
+            };
+            scope.removeItem = function(){
+/*                for(var i in scope.menu){
+                    scope.y = scope.menu[i];
+                    console.log(scope.y.Title[i]);
+                    scope.menu.Title = scope.y;
+                    debugger;
+                };*/
+                scope.menu[0].Title = "Цена до 100 000$";
+                for(var i =0;i<scope.menu.length;i++){
+                    scope.menu[i].selected = false;
+                }
+                scope.menu[1].Title = "Любая марка";
+                console.log(scope.menu.Title)
             };
         },
         restrict: "A",
