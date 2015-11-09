@@ -1,0 +1,33 @@
+/*=============================== b-catalog ==============================*/
+.b-catalog__img{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.b-catalog__img:hover{
+    width: 100%;
+    transform: scale(1.02);
+}
+.b-catalog__padding{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.b-catalog__info{
+    background-color: #fff;
+    padding-bottom: 5px;
+}
+.b-catalog__info__span{
+    padding: 2%;
+    font-size: 13px;
+}
+.b-catalog__car-name-model{
+    padding: 2%;
+    color: #666;
+}
+.b-catalog__price{
+    position: absolute;
+    bottom: 80px;
+    left: 24px;
+    color: #fff;
+    font-size: 25px;
+}

@@ -1,0 +1,39 @@
+/*================================= b-menu =======================================*/
+.b-menu{
+    padding-left: 0;
+}
+.b-menu__ul{
+    padding-left: 0;
+}
+.b-menu__ul__li{
+    list-style: none;
+    padding: 10px 0 10px 30px;
+    position: relative;
+    cursor: pointer;
+    margin-left: -30px;
+}
+.b-menu__ul__li:hover{
+    background-color: #e8e9ea;
+    color: #333;
+    cursor: pointer;
+}
+.b-menu__ul__li:before{
+    content: "";
+    height: 1px;
+    width: 235px;
+    background-color: #dcdcdd;
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -35px;
+}
+.b-menu__ul__li:last-child:after{
+    content: "";
+    height: 1px;
+    width: 215px;
+    background-color: #dcdcdd;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: -35px;
+}

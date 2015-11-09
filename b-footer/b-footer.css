@@ -1,0 +1,35 @@
+/*=================================== b-footer =======================*/
+.b-footer__nav{
+    padding-left: 10px;
+}
+.b-footer__nav .b-footer__pagination__ul__li__a{
+    color: #666;
+    border: none;
+    padding: 12px 20px;
+    background-color: #F5F6F7;
+    float: none;
+}
+.b-footer__pagination__ul__li__a:hover{
+    border: 1px solid #dcdcdd;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #333;
+}
+.b-footer__info_footer{
+    padding: 30px 0;
+}
+.b-catalog__info_footer__a{
+    color: #666;
+    text-decoration: none;
+}
+.b-catalog__info_footer__a:hover{
+    color: #333;
+    text-decoration: none;
+}
+.b-footer__info_footer__studia{
+    text-align: right;
+    padding-right: 45px;
+}
+.b-footer__info_footer__pravo{
+    padding-left: 40px;
+}

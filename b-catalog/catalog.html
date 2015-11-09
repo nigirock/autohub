@@ -1,0 +1,18 @@
+<div class="col-md-12 col-sm-12">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 b-catalog__padding" ng-repeat="car in cars">
+            <img class="b-catalog__img"  ng-src={{car.photo}} alt={{car.name}}>
+            <span class="b-catalog__price">{{car.price}} $</span>
+            <div class="b-catalog__info">
+                <div class="b-catalog__car-name-model">{{car.name}} {{car.model}}</div>
+                <div>
+                    <span class="b-catalog__info__span">{{car.year}}</span>
+                    <span class="b-catalog__info__span">{{car.km}} км</span>
+                    <span class="b-catalog__info__span">{{car.engine}}</span>
+                    <span class="b-catalog__info__span">{{car.volume}}</span>
+                    <span class="b-catalog__info__span">{{car.transmission}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

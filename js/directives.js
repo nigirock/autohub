@@ -8,7 +8,7 @@ app.directive("ngHeader",function(){
             };
         },
         restrict: "A",
-        templateUrl: "header.html"
+        templateUrl: "b-header/header.html"
     }
 });
 app.directive("ngLeftMenu",function(){
@@ -58,12 +58,6 @@ app.directive("ngLeftMenu",function(){
                 scope.menu[1].selected = true;
             };
             scope.removeItem = function(){
-/*                for(var i in scope.menu){
-                    scope.y = scope.menu[i];
-                    console.log(scope.y.Title[i]);
-                    scope.menu.Title = scope.y;
-                    debugger;
-                };*/
                 scope.menu[0].Title = "Цена до 100 000$";
                 for(var i =0;i<scope.menu.length;i++){
                     scope.menu[i].selected = false;
@@ -73,7 +67,7 @@ app.directive("ngLeftMenu",function(){
             };
         },
         restrict: "A",
-        templateUrl: "left_menu.html"
+        templateUrl: "b-menu/left_menu.html"
     }
 });
 app.directive("ngCatalog",function(){
@@ -82,7 +76,7 @@ app.directive("ngCatalog",function(){
 
         },
         restrict: "A",
-        templateUrl: "catalog.html"
+        templateUrl: "b-catalog/catalog.html"
     }
 });
 app.directive("ngFooter",function(){
@@ -91,7 +85,7 @@ app.directive("ngFooter",function(){
 
         },
         restrict: "A",
-        templateUrl: "footer.html"
+        templateUrl: "b-footer/footer.html"
     }
 });
 app.directive("ngPopover",function(){
@@ -100,6 +94,6 @@ app.directive("ngPopover",function(){
             scope.arrMoney = [1000,3000,5000,10000,50000]
         },
         restrict: "A",
-        templateUrl: "popover.html"
+        templateUrl: "b-popover/popover.html"
     }
 });

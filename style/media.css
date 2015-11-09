@@ -1,38 +1,40 @@
 @media (min-width: 993px){
-    menu{
+    .b-menu{
         display: block;
     }
 }
 @media (max-width: 992px) {
-    .btn_filter{
+    .b-header__btn_filter{
         display: block;
-    }
-    .center_block_header{
-        text-align: center;
-    }
-    .btn_filter{
         padding-top: 20px;
     }
-    .inner_header .icon-filter:before {
+    .b-header__center-block-header{
+        text-align: center;
+    }
+    .b-header .icon-filter:before {
         content: "\e902";
         font-size: 35px;
         color: #666;
     }
-    menu{
+    .b-header__right-block-header__button{
+        font-size: 13px;
+        display: block;
+    }
+    .b-menu{
         display: none;
         padding-left: 15px;
     }
-    .menu_ul{
+    .b-menu__ul{
         padding-left: 15px;
     }
-    .menu_ul li{
+    .b-menu__ul__li{
         list-style: none;
         padding: 10px 10px;
         position: relative;
         cursor: pointer;
         margin-left: 0;
     }
-    .menu_ul li:before{
+    .b-menu__ul__li:before{
         content: "";
         height: 1px;
         width: 100%;
@@ -42,7 +44,7 @@
         top: -2px;
         left: 0;
     }
-    .menu_ul li:last-child:after{
+    .b-menu__ul__li:last-child:after{
         content: "";
         height: 1px;
         width: 100%;
@@ -52,91 +54,88 @@
         top: 40px;
         left: 0;
     }
-    .info{
+    .b-catalog__info{
         font-size: 16px;
     }
-    .card_but_popover{
-        font-size: 13px;
-    }
+
     .icon-logo:before{
         font-size: 20px;
     }
-    .studia{
+    .b-footer__info_footer__studia{
         text-align: center;
         padding: 15px 0;
     }
-    .copyright{
+    .b-footer__info_footer__copyright{
         text-align: center;
     }
-    .support{
+    .b-footer__info_footer__pravo{
+        text-align: center;
+    }
+    .b-footer__info_footer__support{
         text-align: center;
     }
 }
+/*============================== 769px ============================*/
 @media (max-width: 769px) {
-    .inner_header .icon-logo:before {
+    .b-header .icon-logo:before {
         content: "\e904";
         font-size: 30px;
         color: #666;
         line-height: 1.5;
         padding-left: 15px;
     }
-    .inner_header .icon-add:before {
+    .b-header .icon-add:before {
         content: "\e900";
         font-size: 35px;
         color: #666;
         line-height: 1.5;
         padding: 0;
     }
-    .btn_filter{
+    .b-header__btn_filter{
         padding-top: 0;
+        display: block;
     }
-    .inner_header .icon-filter:before {
+    .b-header .icon-filter:before {
         content: "\e902";
         font-size: 35px;
         color: #666;
         line-height: 1.5;
         padding:0 0 0 15px;
     }
-    .media_block{
+    .b-header__center-block-header{
         display: none;
     }
-    .btn_add{
+    .b-header__right-block-header{
+        display: none;
+    }
+
+    .b-header__btn_add{
         display: block;
     }
-    menu{
+    .b-menu{
         display: none;
     }
     .media_block_invis{
         display: block;
     }
-    .price{
+    .b-catalog__price{
         font-size: 40px;
         bottom: 130px;
         left: 30px;
     }
-    .info{
+    .b-catalog__info{
         font-size: 24px;
     }
-    .card_but_popover{
+    .b-header__right-block-header__button{
         font-size: 14px;
     }
-    .car_name_model{
+    .b-catalog__car-name-model{
         font-size: 30px;
     }
-    .info_footer{
+    .b-catalog__info_footer{
         text-align: center;
     }
-    .studia{
-        text-align: center;
-        padding-right: 0;
-    }
-    .pravo{
-        padding: 10px 0;
-    }
-    nav{
-        text-align: center;
-    }
-    .pop{
+    .b-popover__pop__price{
         background-color: #F5F6F7;
         position: absolute;
         border-radius: 3px;
@@ -149,7 +148,21 @@
         left: 0;
         z-index: 100;
     }
-    .pop:after {
+    .b-popover__pop__marks{
+        background-color: #F5F6F7;
+        position: absolute;
+        border-radius: 3px;
+        -webkit-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+        -moz-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+        -ms-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+        -o-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+        box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+        padding: 20px;
+        left: 0;
+        z-index: 100;
+    }
+
+    .b-popover__pop__price :after {
         content: "";
         border-width: 10px;
         top: -20px;
@@ -159,57 +172,77 @@
         border-style: solid;
         border-color: transparent transparent #ffffff transparent;
     }
-    .pop_price{
+    .b-popover__pop__marks{
+        content: "";
+        border-width: 10px;
+        top: -20px;
+        left: 40px;
+        border-left-width: 10px;
+        position: absolute;
+        border-style: solid;
+        border-color: transparent transparent #ffffff transparent;
+    }
+    .b-popover__pop__price{
         top: 52px;
     }
-    .pop_marks{
+    .b-popover__pop__marks{
         top: 92px;
+    }
+    .b-footer__info_footer__studia{
+        text-align: center;
+        padding-right: 0;
+    }
+    .b-footer__info_footer__pravo{
+        padding: 10px 0;
+    }
+    .b-footer__nav{
+        text-align: center;
     }
 }
 @media (max-width: 501px){
-    .price{
+    .b-catalog__price{
         font-size: 40px;
         bottom: 110px;
         left: 30px;
     }
-    .info{
+    .b-catalog__info{
         font-size: 20px;
     }
-    .car_name_model{
+    .b-catalog__car-name-model{
         font-size: 24px;
     }
 }
 @media (max-width: 321px){
-    .inner_header .icon-logo:before {
+    .b-header .icon-logo:before {
         content: "\e904";
         font-size: 20px;
         color: #666;
         line-height: 1.5;
         padding: 15px 0 0 0;
     }
-    .inner_header .icon-add:before {
+    .b-header .icon-add:before {
         content: "\e900";
         font-size: 35px;
         color: #666;
         line-height: 1;
         padding: 0;
     }
-    .inner_header .icon-filter:before {
+    .b-header .icon-filter:before {
         content: "\e902";
         font-size: 35px;
         color: #666;
         line-height: 1;
         padding:0 0 0 15px;
     }
-    .price{
+    .b-catalog__price{
         font-size: 30px;
         bottom: 90px;
         left: 25px;
     }
-    .info{
+    .b-catalog__info{
         font-size: 14px;
     }
-    .car_name_model{
+    .b-catalog__car-name-model{
         font-size: 18px;
     }
 

@@ -1,0 +1,51 @@
+/*================== b-header ==========================*/
+.b-header{
+    padding-top: 25px;
+}
+.b-header__left-block-header{
+    line-height: 34px;
+}
+.b-header__center-block-header{
+    line-height: 34px;
+    padding-left: 20px;
+}
+.b-header__right-block-header{
+    text-align: right;
+    padding-right: 20px;
+}
+.b-header__right-block-header__button{
+    border-radius: 3px;
+    -webkit-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    -ms-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    -o-box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    color: #666;
+}
+.b-header__right-block-header__button:hover{
+    color: #333;
+}
+.b-header__btn_add{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #666;
+}
+.b-header__btn_add:focus{
+    outline: none;
+}
+.b-header__btn_add__span{
+    float: right;
+}
+.b-header__btn_filter{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #666;
+}
+.b-header__btn_filter:focus{
+    outline: none;
+}
+.b-header__btn_filter__span{
+    float: right;
+}

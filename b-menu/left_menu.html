@@ -1,0 +1,8 @@
+<div class="col-md-12 col-sm-12">
+    <ul class="b-menu__ul">
+        <li class="b-menu__ul__li" ng-repeat="item in menu" ng-mouseenter=addPopup($index) ng-mouseleave=addPopupLeave($index)>
+            {{item.Title}}
+            <span ng-class="{'fa icon-clear':item.selected}" ng-click=removeItem()></span>
+        </li>
+    </ul>
+</div>
