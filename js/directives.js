@@ -63,7 +63,6 @@ app.directive("ngLeftMenu",function(){
                     scope.menu[i].selected = false;
                 }
                 scope.menu[1].Title = "Любая марка";
-                console.log(scope.menu.Title)
             };
         },
         restrict: "A",

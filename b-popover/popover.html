@@ -1,28 +1,28 @@
 <div class="col-sm-12">
-    <div class="b-popover__pop__price" ng-show="visiblePopupPrice" ng-mouseenter=addPopup(0) ng-mouseleave=addPopupLeave(0)>
+    <div class="b-popover__pop__price"  ng-show="visiblePopupPrice" ng-mouseenter=addPopup(0) ng-mouseleave=addPopupLeave(0)>
         <ul class="b-popover__pop__price__ul">
-            <li ng-repeat="money in arrMoney" ng-click=addCarMoney(money) class="b-popover__pop__price__ul__li">Цена до {{money}} $</li>
+            <li ng-repeat="money in arrMoney" ng-click=addCarMoney(money) class="b-popover__pop__price__ul__li animation">Цена до {{money}} $</li>
         </ul>
     </div>
     <!-- ========================================= -->
     <div class="b-popover__pop__marks" ng-show="visiblePopupMark" ng-mouseenter=addPopup(1) ng-mouseleave=addPopupLeave(1)>
         <ul class="b-popover__pop__marks__ul">
-            <li ng-repeat="item in carsModels.slice(0,10)" class="b-popover__pop__marks__ul__li">
+            <li ng-repeat="item in carsModels.slice(0,10)" class="b-popover__pop__marks__ul__li animation">
                 <a href="#" ng-click=addCarSearch(item) class="b-popover__pop__marks__ul__li__a">{{item}}</a>
             </li>
         </ul>
         <ul class="b-popover__pop__marks__ul">
-            <li ng-repeat="item in carsModels.slice(10,20)" class="b-popover__pop__marks__ul__li">
+            <li ng-repeat="item in carsModels.slice(10,20)" class="b-popover__pop__marks__ul__li animation">
                 <a href="#" ng-click=addCarSearch(item) class="b-popover__pop__marks__ul__li__a">{{item}}</a>
             </li>
         </ul>
         <ul class="b-popover__pop__marks__ul">
-            <li ng-repeat="item in carsModels.slice(20,30)" class="b-popover__pop__marks__ul__li">
+            <li ng-repeat="item in carsModels.slice(20,30)" class="b-popover__pop__marks__ul__li animation">
                 <a href="#" ng-click=addCarSearch(item) class="b-popover__pop__marks__ul__li__a">{{item}}</a>
             </li>
         </ul>
         <ul class="b-popover__pop__marks__ul">
-            <li ng-repeat="item in carsModels.slice(30)" class="b-popover__pop__marks__ul__li">
+            <li ng-repeat="item in carsModels.slice(30)" class="b-popover__pop__marks__ul__li animation">
                 <a href="#" ng-click=addCarSearch(item) class="b-popover__pop__marks__ul__li__a">{{item}}</a>
             </li>
         </ul>

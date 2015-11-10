@@ -4,9 +4,9 @@
     }
 }
 @media (max-width: 992px) {
-    .b-header__btn_filter{
+    .b-header .b-header__btn_filter{
         display: block;
-        padding-top: 20px;
+        padding-top: 0;
     }
     .b-header__center-block-header{
         text-align: center;
@@ -17,24 +17,26 @@
         color: #666;
     }
     .b-header__right-block-header__button{
-        font-size: 13px;
-        display: block;
+        font-size: 11px;
+    }
+    .b-header .icon-logo:before{
+        font-size: 25px;
     }
     .b-menu{
         display: none;
         padding-left: 15px;
     }
-    .b-menu__ul{
+    .b-menu .b-menu__ul{
         padding-left: 15px;
     }
-    .b-menu__ul__li{
+    .b-menu .b-menu__ul__li{
         list-style: none;
         padding: 10px 10px;
         position: relative;
         cursor: pointer;
         margin-left: 0;
     }
-    .b-menu__ul__li:before{
+    .b-menu .b-menu__ul__li:before{
         content: "";
         height: 1px;
         width: 100%;
@@ -44,7 +46,7 @@
         top: -2px;
         left: 0;
     }
-    .b-menu__ul__li:last-child:after{
+    .b-menu .b-menu__ul__li:last-child:after{
         content: "";
         height: 1px;
         width: 100%;
@@ -56,10 +58,6 @@
     }
     .b-catalog__info{
         font-size: 16px;
-    }
-
-    .icon-logo:before{
-        font-size: 20px;
     }
     .b-footer__info_footer__studia{
         text-align: center;
@@ -108,8 +106,10 @@
     .b-header__right-block-header{
         display: none;
     }
-
-    .b-header__btn_add{
+    .b-header__right-block-header__button{
+        font-size: 14px;
+    }
+    .b-header .b-header__btn_add{
         display: block;
     }
     .b-menu{
@@ -125,9 +125,6 @@
     }
     .b-catalog__info{
         font-size: 24px;
-    }
-    .b-header__right-block-header__button{
-        font-size: 14px;
     }
     .b-catalog__car-name-model{
         font-size: 30px;
